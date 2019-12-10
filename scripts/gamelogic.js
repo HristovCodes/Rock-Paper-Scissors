@@ -5,6 +5,7 @@ let playerDecision;
 let computerDecision;
 let score = 0;
 
+//plays 5 rounds of the game
 function game() {
   score = 0;
   for (let i = 1; i <= 5; i++) {
@@ -24,6 +25,7 @@ function game() {
   }
 }
 
+//decides what the computer will play (random)
 function computerPlay() {
   let choice = Math.random() * 2;
   choice = Math.round(choice);
@@ -37,6 +39,7 @@ function computerPlay() {
   return choice;
 }
 
+//decides the outcome of the game, case insensitive
 function decideOutcome() {
   if (playerDecision.toUpperCase() === computerDecision.toUpperCase()) {
     return "It's a tie!" + playerDecision + " is same as " + computerDecision;
