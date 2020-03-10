@@ -1,4 +1,4 @@
-tartget: /pages/index.html
+target: /pages/index.html
 
 # Rock Paper Scissors
  You need a description for this really?
