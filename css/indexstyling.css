@@ -1,0 +1,106 @@
+body {
+  min-height: 100vh;
+}
+
+.grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.left {
+  background-color: #fff;
+}
+
+.right {
+  background-color: #fff;
+}
+
+.title {
+  font-family: "Sen", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin: 15px 10px;
+  font-weight: bold;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  text-align: left;
+  margin: 15px 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  margin-top: 25px;
+}
+
+.startgame {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 130px;
+  background-color: rgb(9, 138, 212);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.3em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.startgame:hover {
+  background-color: rgba(9, 137, 212, 0.897);
+}
+
+.buttons {
+  visibility: visible;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  margin-top: 25px;
+}
+
+.container {
+  display: block;
+  height: 30vh;
+}
+
+.btn {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.rock {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-kHtD_QRIa00%2FT01FXL-UXzI%2FAAAAAAAAOpM%2FqKpE6FmK79M%2Fs400%2Frock.jpg&f=1&nofb=1");
+}
+
+.paper {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.stickpng.com%2Fthumbs%2F580b585b2edbce24c47b245f.png&f=1&nofb=1");
+}
+
+.scissors {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fs7d1.scene7.com%2Fis%2Fimage%2Fofficedepot%2F323824_p_wipo%3F%24OD-Dynamic%24%26wid%3D450%26hei%3D450&f=1&nofb=1");
+}

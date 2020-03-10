@@ -11,7 +11,12 @@
     <title>Rock, Paper, Scissors</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/indexstyling.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Sen&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -20,6 +25,29 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+
+    <main>
+      <div class="grid">
+        <div class="left">
+          <div class="container">
+            <h1 class="title">Welcome to Rock, Paper, Scissors</h1>
+            <p id="score" class="text">Score: 0</p>
+            <p id="round" class="text">Round: 0</p>
+            <p id="outcome" class="text"></p>
+            <h2 id="message" class="text"></h2>
+          </div>
+        </div>
+        <div class="right">
+          <p id="computer" class="text"></p>
+        </div>
+        <a id="startgame" class="startgame">New Game</a>
+        <div id="buttons" class="hidden">
+          <button id="rock" class="btn rock m15"></button>
+          <button id="paper" class="btn paper m15"></button>
+          <button id="scissors" class="btn scissors m15"></button>
+        </div>
+      </div>
+    </main>
 
     <script src="../scripts/gamelogic.js"></script>
   </body>
